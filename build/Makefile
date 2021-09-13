@@ -1,6 +1,6 @@
 TARGET_GCC = /usr/bin/arm-none-eabi-gcc
 TARGET_AR = /usr/bin/arm-none-eabi-ar
-CFLAGS = -mcpu=cortex-m33  -mthumb  -mabi=aapcs  -mfpu=fpv5-sp-d16
+CFLAGS = -mcpu=cortex-m33  -mthumb  -mabi=aapcs  -mfpu=fpv5-sp-d16 -mfloat-abi=hard
 
 lib.a: lib.o
 	$(TARGET_AR) rcs $@ $^
